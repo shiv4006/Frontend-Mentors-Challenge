@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Fav icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap linking -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- external css -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+  <!-- navbar start -->
+
+  <nav class="navbar fixed-top navbar-expand-sm">
+    <div class="container-fluid border-bottom border-secondary pb-3">
+      <a class="navbar-brand" href="#">sneakers</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">sneakers</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ms-auto">
+        <a href="#" class=""><img src="images/icon-cart.svg" alt="" height="24px" width="24px"></a>
+        <a href="#" class="mx-1"><img src="images/image-avatar.png" alt="" height="40px" width="40px"></a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- navbar end -->
+
+
+  <!-- main container start -->
+
+  <div class="div container-fluid">
+    <div class="row main-section">
+      <div class="section-1 col-sm-4 col-lr-4">
+        <img class="main-img img-fluid" src="images/image-product-1.jpg" alt="">
+          <div class="row thumbnails">
+            <img class="col-3 thumb active img-fluid" src="images/image-product-1-thumbnail.jpg" alt="">
+          
+            <img class="col-3 thumb img-fluid" src="images/image-product-2-thumbnail.jpg" alt="">
+        
+            <img class="col-3 thumb img-fluid" src="images/image-product-3-thumbnail.jpg" alt="">
+        
+            <img class="col-3 thumb img-fluid" src="images/image-product-4-thumbnail.jpg" alt="">
+          </div>
+      </div>
+
+      <div class="section-2 col-sm-5 col-lr-5 content-description">
+        <p class="sneaker-company">Sneaker Company</p>
+        <p class="heading">Fall Limited Edition Sneakers</p>
+        <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <p class="discount-price">$125.00 <span>50%</span></p>
+        <p class="actual-price">$250.00</p>
+
+        <div class="wrap">
+          <div class="count">
+            <i class="fa-solid fa-minus decrease"></i>
+            <span class="value">0</span>
+            <i class="fa-solid fa-plus increase"></i>
+          </div>
+
+          <div>
+            <button class="add-to-cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- main container end -->
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/shiv4006/Web-Projects" target="_blank"> Shivam</a>.
+  </div>
+
+
+
+  <!-- image slider start -->
+
+  <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+  <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+
+  <!-- image slider end -->
+
+
+  <!-- Bootstrap linking -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+  <!-- javascript linking -->
+   <script src="app.js"></script>
+</body>
+
+</html>
