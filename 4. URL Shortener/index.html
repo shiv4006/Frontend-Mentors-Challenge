@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- title -->
+  <title>Shortly</title>
+  <meta name="title" content="Shortly">
+  <meta name="description" content="This is a URL shortning website">
+
+  <!-- external css linking -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- google font linking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+
+
+  <!-- 
+    - Navbar
+  -->
+
+  <header>
+
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" data-logo>
+        </div>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Resources</a>
+          </li>
+        </ul>
+
+        <div class="nav-handler">
+          <button class="btn btn-secondary">Login</button>
+          <button class="btn btn-primary">Sign Up</button>
+        </div>
+
+      </div>
+
+      <div class="mobile-header">
+
+        <div class="mobile-logo">
+          <div class="logo">
+            <img src="images/logo.svg" alt="logo" data-logo>
+          </div>
+
+          <div class="open-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+
+        <div class="mobile-menu">
+          <div class="close-menu">
+            <i class="fa-solid fa-xmark close-menu"></i>
+          </div>
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+              <a href="#" class="mobile-nav-link active">Home</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#" class="mobile-nav-link">Pricing</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#" class="mobile-nav-link">Features</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#" class="mobile-nav-link">Resources</a>
+            </li>
+          </ul>
+
+          <hr>
+
+          <div class="nav-handler">
+            <button class="btn btn-secondary">Login</button>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+  <main>
+
+    <!-- 
+      - Hero
+    -->
+
+    <div class="section hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>More than just shorter links</h1>
+          <p>Build your brand’s recognition and get detailed insights
+            on how your links are performing.</p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+
+        <figure class="hero-banner">
+          <img src="images/illustration-working.svg" alt="">
+        </figure>
+      </div>
+    </div>
+
+
+
+
+    <!-- 
+      - Main Work
+    -->
+
+    <div class="section main">
+      <div class="container">
+
+        <form class="input-section">
+          <input type="text" placeholder="Shorten a link here..." class="long-url">
+          <button type="submit" class="btn shorten-btn">Shorten it!</button>
+        </form>
+
+        <div class="display">
+          <!-- <div class="display-content">
+            <p class="old-link"></p>
+            <div class="new-link-section">
+              <p class="new-link"></p>
+              <button class="btn"></button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 
+      - Statistics
+    -->
+
+    <div class="section statistics">
+      <div class="container">
+
+        <div class="statistics-heading">
+          <h3>Advanced Statistics</h3>
+          <p>Track how your links are performing across the web with our 
+            advanced statistics dashboard.</p>
+        </div>
+        
+        <div class="statistics-card">
+          <div class="div"></div>
+          <div class="card-item">
+            <img src="images/icon-brand-recognition.svg" alt="">
+            <h4>Brand Recognition</h4>
+            <p>Boost your brand recognition with each click. Generic links don’t 
+              mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+
+          <div class="card-item second">
+            <img src="images/icon-detailed-records.svg" alt="">
+            <h4>Detailed Records</h4>
+            <p>Gain insights into who is clicking your links. Knowing when and where 
+              people engage with your content helps inform better decisions.</p>
+          </div>
+
+          <div class="card-item third">
+            <img src="images/icon-fully-customizable.svg" alt="">
+            <h4>Fully Customizable</h4>
+            <p>Improve brand awareness and content discoverability through customizable 
+              links, supercharging audience engagement.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- 
+      - Getting Touch
+    -->
+
+    <div class="section interation">
+      <div class="container">
+        <div class="interation-content">
+          <h3>Boost you links today</h3>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <!-- 
+    - Footer
+    -->
+
+  <footer class="section footer">
+    <div class="container">
+      <img src="images/logo.svg" alt="" class="footer-logo">
+
+      <div class="footer-content">
+        <div class="features">
+          <h4>Features</h4>
+          
+          <p>Link Shortening</p>
+          <p>Branded Links</p>
+          <p>Analytics</p>
+        </div>
+
+        <div class="resourses">
+          <h4>Resources</h4>
+
+          <p>Blog</p>
+          <p>Developers</p>
+          <p>Support</p>
+        </div>
+
+        <div class="company">
+          <h4>Company</h4>
+
+          <p>About</p>
+          <p>Our Team</p>
+          <p>Careers</p>
+          <p>Contact</p>
+        </div>
+
+        <div class="icons">
+          <img src="images/icon-facebook.svg" alt="">
+          <img src="images/icon-twitter.svg" alt="">
+          <img src="images/icon-pinterest.svg" alt="">
+          <img src="images/icon-instagram.svg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- Features
+  Pricing
+  Resources
+
+  Login
+  Sign Up
+
+  More than just shorter links
+
+  Build your brand’s recognition and get detailed insights 
+  on how your links are performing.
+
+  Get Started
+  
+  Shorten a link here...
+
+  Shorten It!
+
+  Advanced Statistics
+
+  Track how your links are performing across the web with our 
+  advanced statistics dashboard.
+
+  Brand Recognition
+
+  Boost your brand recognition with each click. Generic links don’t 
+  mean a thing. Branded links help instil confidence in your content.
+
+  Detailed Records
+
+  Gain insights into who is clicking your links. Knowing when and where 
+  people engage with your content helps inform better decisions.
+
+  Fully Customizable
+
+  Improve brand awareness and content discoverability through customizable 
+  links, supercharging audience engagement.
+
+  Boost your links today
+
+  Get Started
+
+  Features
+
+  Link Shortening
+  Branded Links
+  Analytics
+
+  Resources
+
+  Blog
+  Developers
+  Support
+
+  Company
+
+  About
+  Our Team
+  Careers
+  Contact
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="app.js"></script>
+</body>
+
+</html>
